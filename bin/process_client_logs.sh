@@ -11,6 +11,6 @@ cd "$1"
 
 #for i in $files
 #do
-	sed -En 's/(^.{0,9}):([0-9]+):([a-zA-Z0-9 _]+)\[([0-9]+)\]:([a-zA-Z ]+) for (invalid user )?([a-zA-Z]+) from ([0-9.]+) (.+)/\1 \7 \8/p' -r var/log/* > failed_login_data.txt
+	sed -En 's/(^.{0,9}):([0-9]+):([a-zA-Z0-9 _]+)\[([0-9]+)\]:([a-zA-Z ]+) for (invalid user )?([a-zA-Z0-9 _-]+) from ([0-9.]+) (.+)/\1 \7 \8/p' -r var/log/* > failed_login_data.txt
 #done
 
